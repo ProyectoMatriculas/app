@@ -6,7 +6,7 @@
   <meta name="msapplication-tap-highlight" content="no">
   <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
   <meta name="color-scheme" content="light dark">
-  <title>Starter Template - Materialize</title>
+  <title>Matriculaciones</title>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -16,7 +16,7 @@
 <body>
   <!-- Parte Superior -->
   <nav class="light-blue lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo center">Logo</a>
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo center">Matriculaciones</a>
         <li><a href="#">Navbar Link</a></li>
       </ul>
 
@@ -34,8 +34,28 @@
     <li class="tab col s3"><a class="white-text custom-font-size" href="#personaldata">Datos Personales</a></li>
   </ul>
   <!-- Dashboard -->
-  <div id="dashboard" class="col s12 ">
-      <h6>Estado Matriculas</h6>
+</br>
+  <div id="dashboard" class="col s6 center ">
+    <div id="matricula">
+      <h5><i id="semaphoreMatriculation" class="material-icons circle grey-text darken-3">brightness_1</i>Matricula</h5>
+      <button id="btnMatriculationPending" class="waves-effect waves-light btn">Pendiente</button>
+      <button id="btnMatriculationAccepted" class="waves-effect waves-light btn">Aceptado</button>
+      <button id="btnMatriculationDenied" class="waves-effect waves-light btn">Denegado</button>
+    </div>
+    <div id="frontDNI"> 
+      <h5><i id="semaphoreFrontDNI" class="material-icons circle grey-text darken-3">brightness_1</i>DNI delantero</h5>
+      <button id="btnFrontDNIPending" class="waves-effect waves-light btn">Pendiente</button>
+      <button id="btnFrontDNIAccepted" class="waves-effect waves-light btn">Aceptado</button>
+      <button id="btnFrontDNIDenied" class="waves-effect waves-light btn">Denegado</button>
+    </div>
+    <div id="backDNI">
+      <h5><i id="semaphoreBackDNI" class="material-icons circle grey-text darken-3">brightness_1</i>Anverso DNI</h5>
+      <button id="btnBackDNIPending" class="waves-effect waves-light btn">Pendiente</button>
+      <button id="btnBackDNIAccepted" class="waves-effect waves-light btn">Aceptado</button>
+      <button id="btnBackDNIDenied" class="waves-effect waves-light btn">Denegado</button>
+    </div>
+    </br></br></br>
+    <button id="btnResetSemaphore" class="waves-effect waves-light btn">Reset</button>
   </div>
   <!-- Requisitos -->
   <div id="requirements" class="col s12  ">
