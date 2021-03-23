@@ -4,9 +4,7 @@
   $(function(){
  
     $('.sidenav').sidenav();
-    $('.tabs').tabs({ "swipeable": true });
-
-
+    $('.tabs').tabs({ "swipeable": true }); 
  
   }); // end of document ready
 })(jQuery); // end of jQuery name space
@@ -21,8 +19,6 @@ var semaphoreFrontDNI = document.getElementById("semaphoreFrontDNI");
 var semaphoreBackDNI = document.getElementById("semaphoreBackDNI");
 
 // Botones
-var btnResetSemaphore = document.getElementById("btnResetSemaphore");
-btnResetSemaphore.onclick = resetAllSemaphore;
 
 var btnMatriculationPending = document.getElementById("btnMatriculationPending");
 btnMatriculationPending.onclick = changeColorMatriculationPending;
@@ -45,6 +41,9 @@ btnBackDNIAccepted.onclick = changeColorBackDNIAccepted;
 var btnBackDNIDenied = document.getElementById("btnBackDNIDenied");
 btnBackDNIDenied.onclick = changeColorBackDNIDenied;
 
+
+
+
 // Funciones
  
 function onDeviceReady() {
@@ -53,6 +52,9 @@ function onDeviceReady() {
     console.log('Running cordova-' + cordova.platformId + '@' + cordova.version);
     //document.getElementById('deviceready').classList.add('ready');
 }
+
+
+
 
 function changeColorMatriculationPending(){
 	semaphoreMatriculation.className = "material-icons circle orange-text darken-3";
@@ -90,8 +92,5 @@ function changeColorBackDNIDenied(){
 	semaphoreBackDNI.className = "material-icons circle red-text darken-3";
 }
 
-function resetAllSemaphore(){
-	semaphoreMatriculation.className = "material-icons circle grey-text darken-3";
-	semaphoreFrontDNI.className = "material-icons circle grey-text darken-3";
-	semaphoreBackDNI.className = "material-icons circle grey-text darken-3";
-}
+
+
